@@ -22,7 +22,7 @@ async function Program() {
     console.log("Welcome to Luke's Calulator!");
     let history = [];
     let shouldLoop = true;      // this will loop so they get the option again
-    while (true) {
+    while (shouldLoop) {
         // while (true) {
         // List options
         console.log("[1] Add numbers");
@@ -68,13 +68,13 @@ async function Program() {
                 // Error: couldn't read input
                 console.log("Error: please enter a number 1 - 4");
         }
-    }
-}
-console.log();
-// }
-// Goodbye message
-console.log("Thank you for using Luke's Calulator!");
 
+    }
+    console.log("");
+
+    // Goodbye message
+    console.log("Thank you for using Luke's Calulator!");
+}
 
 // alt + shift + f
 
